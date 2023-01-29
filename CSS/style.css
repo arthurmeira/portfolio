@@ -1,0 +1,97 @@
+/**********GLOBAL**********/
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+:root{
+    --cor-primaria: rgb(80, 230, 115);
+    --cor-secundaria: rgb(145, 0, 200);
+    --cor-terciaria: rgb(151, 151, 151);
+    --cor-fundo: rgb(25, 25, 25);
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--cor-fundo);
+    width: 100%;
+    margin: auto;
+    color: white;
+}
+
+/**********HEADER**********/
+
+header .container-header .top{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 0px 10px 0px;
+    background-color: rgb(35, 35, 35);
+}
+
+header .container-header .top .btn a{
+    margin-left: 10px;
+    text-decoration: none;
+    color: var(--cor-terciaria);
+    font-weight: 400;
+    transition: color 0.2s;
+}
+
+header .container-header .top .btn a:hover{
+    color: var(--cor-primaria);
+}
+
+header .container-header .top h1{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 17px;
+    color: var(--cor-primaria);
+}
+
+header span{
+    color: var(--cor-secundaria);
+    font-weight: 600;
+}
+
+/**********MAIN**********/
+
+main .container-main{
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    margin-top: 30px;
+}
+
+main .container-main .banner img{
+    width: 100%;
+    height: 200px;
+    border-radius: 20px 20px 20px 20px;
+    object-fit: cover;
+    margin-bottom: -25px;
+    z-index: 0;
+}
+
+main .container-main .perfil img{
+    float: left;
+    transform: translate(-50%, -100%);
+    position: absolute;
+    width: 200px;
+    border: 5px solid var(--cor-primaria);
+    border-radius: 50%;
+}
+
+main .container-main .content{
+    border-radius: 0px 0px 20px 20px;
+    background-color: rgb(35, 35, 35);
+    padding: 80px 0px 150px 0px;
+}
+
+main .container-main .content .bio{
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    text-align: center;
+
+}
